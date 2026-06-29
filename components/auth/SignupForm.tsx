@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export function SignupForm() { return <form className="card form-card"><h1>Create workspace</h1><label className="field">Name<input placeholder="Your name" /></label><label className="field">Work email<input type="email" placeholder="you@company.com" /></label><label className="field">Company<input placeholder="Company name" /></label><Link className="button" href="/onboarding">Continue</Link></form>; }

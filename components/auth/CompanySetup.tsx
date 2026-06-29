@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export function CompanySetup() { return <form className="card form-card"><h1>Company setup</h1><label className="field">Primary workflow<select><option>Shipment disputes</option><option>Warehouse exceptions</option><option>Vendor analytics</option></select></label><label className="field">Monthly shipments<input type="number" placeholder="1200" /></label><Link className="button" href="/dashboard">Finish setup</Link></form>; }

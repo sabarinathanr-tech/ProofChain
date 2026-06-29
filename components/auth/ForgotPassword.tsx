@@ -1,0 +1,1 @@
+export function ForgotPassword() { return <form className="card form-card"><h1>Reset password</h1><p className="metric">Enter your email and ProofChain will prepare a secure reset link.</p><label className="field">Email<input type="email" placeholder="you@company.com" /></label><button className="button" type="button">Send link</button></form>; }

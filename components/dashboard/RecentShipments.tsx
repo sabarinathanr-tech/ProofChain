@@ -1,0 +1,2 @@
+import { recentShipments } from '@/lib/constants';
+export function RecentShipments() { return <div className="card" style={{overflowX:'auto'}}><h3>Recent shipments</h3><table className="table"><thead><tr><th>ID</th><th>Vendor</th><th>Status</th><th>Risk</th></tr></thead><tbody>{recentShipments.map((s) => <tr key={s.id}><td>{s.id}</td><td>{s.vendor}</td><td>{s.status}</td><td><span className={'status ' + (s.risk === 'High' ? 'red' : s.risk === 'Medium' ? 'amber' : 'green')}>{s.risk}</span></td></tr>)}</tbody></table></div>; }

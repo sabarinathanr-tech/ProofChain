@@ -1,0 +1,1 @@
+export function QuickActions() { return <div className="card"><h3>Quick actions</h3><div style={{display:'flex',gap:10,flexWrap:'wrap'}}><button className="button">Upload proof</button><button className="button secondary">Create dispute</button><button className="button secondary">Export report</button></div></div>; }

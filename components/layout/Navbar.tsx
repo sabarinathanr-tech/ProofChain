@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export function Navbar() { return <header className="navbar container"><Link className="logo" href="/"><span className="logo-mark">P</span><span>ProofChain</span></Link><nav className="nav-links" aria-label="Main navigation"><Link href="/features">Features</Link><Link href="/pricing">Pricing</Link><Link href="/about">About</Link><Link href="/contact">Contact</Link><Link className="button secondary" href="/login">Login</Link></nav></header>; }

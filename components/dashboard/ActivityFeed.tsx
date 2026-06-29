@@ -1,0 +1,1 @@
+export function ActivityFeed() { return <div className="card"><h3>Activity</h3>{['Invoice INV-883 matched to PO-1042','Dock photo added to SH-1029','Vendor response due today'].map((item) => <p className="metric" key={item}>{item}</p>)}</div>; }
