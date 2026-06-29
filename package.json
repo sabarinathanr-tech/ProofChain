@@ -4,13 +4,18 @@
   "private": true,
   "scripts": {
     "predev": "node scripts/clean-next-config.cjs",
+    "postinstall": "prisma generate",
     "dev": "next dev",
     "prebuild": "node scripts/clean-next-config.cjs",
     "build": "next build",
     "start": "next start",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate deploy",
+    "db:studio": "prisma studio"
   },
   "dependencies": {
+    "@prisma/client": "6.19.3",
     "next": "^16.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -19,6 +24,7 @@
     "@types/node": "^20.14.11",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "prisma": "6.19.3",
     "typescript": "^5.5.4"
   }
 }
