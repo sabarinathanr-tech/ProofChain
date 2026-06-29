@@ -1,1 +1,8 @@
-export function CommandPalette() { return <input aria-label="Search ProofChain" placeholder="Search shipments, vendors, disputes" style={{border:'1px solid var(--line)',borderRadius:8,maxWidth:360,padding:'10px 12px',width:'100%'}} />; }
+export function CommandPalette() {
+  return (
+    <label className="command-search">
+      <span>Search</span>
+      <input aria-label="Search ProofChain" placeholder="Shipments, vendors, disputes" />
+    </label>
+  );
+}
